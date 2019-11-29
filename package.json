@@ -3,13 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@bugsnag/js": "^6.4.3",
+    "@bugsnag/plugin-react": "^6.4.0",
+    "@statickit/react": "^1.2.0",
+    "cra-append-sw": "^2.7.0",
+    "gh-pages": "^2.1.1",
+    "i18next": "^19.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "react-ga": "^2.7.0",
+    "react-i18next": "^11.2.2",
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cra-append-sw -s ./src/custom-sw.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

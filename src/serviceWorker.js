@@ -73,6 +73,9 @@ function registerValidSW(swUrl, config) {
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
               );
+              // window.location.reload(true);
+              displayUpdateNotification();
+
 
               // Execute callback
               if (config && config.onUpdate) {
@@ -124,6 +127,31 @@ function checkValidServiceWorker(swUrl, config) {
         'No internet connection found. App is running in offline mode.'
       );
     });
+}
+
+function displayUpdateNotification() {
+  const link = document.createElement('div');
+  link.classList.add('update-notification');
+  link.innerHTML = 'Uma versão mais nova deste site está disponível. ';
+
+  const buttonUpdate = document.createElement('a');
+  buttonUpdate.setAttribute('href', '#');
+  buttonUpdate.innerHTML = 'Clique aqui para atualizar';
+  buttonUpdate.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.reload(true);
+  });
+
+  const buttonClose = document.createElement('button');
+  buttonClose.innerHTML = '&times;';
+  buttonClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.target.parentNode.remove();
+  });
+
+  document.querySelector('body').appendChild(link);
+  document.getElementsByClassName('update-notification')[0].appendChild(buttonUpdate);
+  document.getElementsByClassName('update-notification')[0].appendChild(buttonClose);
 }
 
 export function unregister() {
