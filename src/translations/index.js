@@ -199,7 +199,7 @@ const resources = {
         'github_link': 'Projeto da Grotesca Reforma Variável no GitHub',
         'credits_title': 'Créditos',
         'credits_text': 'Este projeto foi desenvolvido por Cadu Carvalho como projeto final da Pós-Graduação em Tipografia do Centro Universitário Senac.',
-        'credits_license': 'As fontes e seus arquvios de origem estão disponíveis de acordo com a licença GNU General Public License 3.0.'
+        'credits_license': 'As fontes e seus arquivos de origem estão disponíveis de acordo com a licença GNU General Public License 3.0.'
       }
     }
   },
