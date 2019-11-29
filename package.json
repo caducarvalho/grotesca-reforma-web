@@ -7,6 +7,7 @@
     "@bugsnag/plugin-react": "^6.4.0",
     "@statickit/react": "^1.2.0",
     "cra-append-sw": "^2.7.0",
+    "express": "^4.17.1",
     "gh-pages": "^2.1.1",
     "i18next": "^19.0.1",
     "react": "^16.12.0",
@@ -17,7 +18,8 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/server.js",
+    "dev": "react-scripts start",
     "build": "react-scripts build && cra-append-sw -s ./src/custom-sw.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
