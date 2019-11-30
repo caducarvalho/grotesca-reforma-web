@@ -100,12 +100,12 @@ const App = () => {
   }
 
   async function changeLanguage() {
-    const lang = window.location.pathname.toString();
+    const lang = window.location.pathname.toString().replace(/\W*/, '');
 
     switch (lang) {
-      case '/fr':
+      case 'fr':
         return i18n.changeLanguage('fr');
-      case '/en':
+      case 'en':
         return i18n.changeLanguage('en');
       default:
         return i18n.changeLanguage('pt-BR');
