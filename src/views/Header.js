@@ -16,22 +16,21 @@ const HeroDesignSpace = styled.div`
 `;
 
 const HeroDesignSpaceLegend = styled.span`
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: ${props => props.theme.dark ? '#55504B' : '#B97'};
+  color: ${props => props.theme.dark ? '#55504B' : '#CBA'};
   position: absolute;
   font-variation-settings: "wght" 600, "wdth" 500;
   user-select: none;
 
   &.wght {
     bottom: 5px;
-    left: 20px;
+    left: 5px;
   }
   
   &.wdth {
-    top: 40px;
-    right: -15px;
+    top: 20px;
+    right: -10px;
     transform: rotate(90deg);
   }
 `;

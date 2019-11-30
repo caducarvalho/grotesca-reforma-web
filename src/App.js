@@ -1,7 +1,8 @@
-import React, {useRef} from 'react';
+import React, {useRef, useEffect} from 'react';
 import {createGlobalStyle} from 'styled-components';
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
+import {Helmet} from "react-helmet";
 import './fonts/fonts.css';
 import resources from './translations'
 import ThemeContextProvider from './contexts/ThemeContext';
@@ -98,6 +99,23 @@ const App = () => {
     }
   }
 
+  async function changeLanguage() {
+    const lang = window.location.pathname.toString();
+
+    switch (lang) {
+      case '/fr':
+        return i18n.changeLanguage('fr');
+      case '/en':
+        return i18n.changeLanguage('en');
+      default:
+        return i18n.changeLanguage('pt-BR');
+    }
+  }
+
+  useEffect(() => {
+    changeLanguage()
+  }, []);
+
   return (
     <ThemeContextProvider>
       <GlobalStyle />
@@ -113,6 +131,14 @@ const App = () => {
       <Contact sectionRef={sectionContact} />
       <Changelog sectionRef={sectionChangelog} />
       <Footer sectionRef={sectionFooter} />
+
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Grotesca Reforma Variável</title>
+        <link rel="canonical" href="http://grotescareforma.xyz" />
+        <meta name="description" content="Site promocional da fonte variável Grotesca Reforma" />
+        <meta name="keywords" content="typography, grotesca reforma, type revival, variable fonts" />
+      </Helmet>
     </ThemeContextProvider>
   );
 }

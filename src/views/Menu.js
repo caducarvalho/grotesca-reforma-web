@@ -143,6 +143,9 @@ export default ({scroller}) => {
           <NavBarMenuButton type="button" onClick={() => closeMenuAndGo('characters')}>{t('menu.characters')}</NavBarMenuButton>
         </NavBarMenuItem>
         <NavBarMenuItem>
+          <NavBarMenuButton type="button" onClick={() => closeMenuAndGo('article')}>{t('menu.article')}</NavBarMenuButton>
+        </NavBarMenuItem>
+        <NavBarMenuItem>
           <NavBarMenuButton type="button" onClick={() => closeMenuAndGo('test')}>{t('menu.test')}</NavBarMenuButton>
         </NavBarMenuItem>
         <NavBarMenuItem>
