@@ -31,7 +31,7 @@ const AboutBox = styled.div`
   }
 
   &.lang-path {
-    flex-order: 1;
+    order: 1;
   }
 `;
 
