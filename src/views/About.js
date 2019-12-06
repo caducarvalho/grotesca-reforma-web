@@ -25,6 +25,7 @@ const AboutBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  order: 2;
 
   @media screen and (max-width: 829px) {
     margin: 10px 0;
