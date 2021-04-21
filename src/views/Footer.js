@@ -40,7 +40,8 @@ export default ({sectionRef}) => {
     <FooterSection ref={sectionRef}>
       <FooterBox>
         <h2>{t('footer.download_title')}</h2>
-        <p><a href="http://github.com/caducarvalho/grotesca-reforma" target="_blank" rel="noopener noreferrer">{t('footer.github_link')}</a></p>
+        <p><a href="https://github.com/caducarvalho/grotesca-reforma" target="_blank" rel="noopener noreferrer">{t('footer.github_link')}</a></p>
+        <p><a href="https://www.behance.net/caducarvalho" target="_blank" rel="noopener noreferrer">{t('footer.behance_link')}</a></p>
       </FooterBox>
   
       <FooterBox>

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {useTranslation} from 'react-i18next';
 
+const LANG = window.location.pathname.toString().replace(/\W*/, '');
+
 const AboutSection = styled.section`
   background: ${props => props.theme.color};
   padding: 20px;
@@ -23,9 +25,14 @@ const AboutBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  order: 2;
 
   @media screen and (max-width: 829px) {
     margin: 10px 0;
+  }
+
+  &.lang-path {
+    order: 1;
   }
 `;
 
@@ -93,7 +100,7 @@ export default ({sectionRef}) => {
         </AboutLanguageButton>
       </AboutBox>
   
-      <AboutBox lang="en">
+      <AboutBox lang="en" className={LANG === 'en' ? 'lang-path' : 'lang'}>
         <AboutContent>
           <h2>About the font</h2>
           <p>Grotesca Reforma Variável (variable) is a typographic experiment, built as a capstone project for the Specialist Degree in Typography of Senac.</p>
@@ -110,7 +117,7 @@ export default ({sectionRef}) => {
         </AboutLanguageButton>
       </AboutBox>
   
-      <AboutBox lang="fr">
+      <AboutBox lang="fr" className={LANG === 'fr' ? 'lang-path' : 'lang'}>
         <AboutContent>
           <h2>À propos de la police</h2>
           <p>Grotesca Reforma Variável (variable) est une expérience typographique fait comme le project de fin de cours de spécialisation de troisième cycle en typographie du Centre Universitaire Senac.</p>

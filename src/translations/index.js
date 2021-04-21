@@ -96,6 +96,7 @@ const resources = {
       'footer': {
         'download_title': 'Download the font',
         'github_link': 'Grotesca Reforma Variável project on GitHub',
+        'behance_link': 'Meet other projects of the author',
         'credits_title': 'Credits',
         'credits_text': 'This project was developed by Cadu Carvalho as a capstone project for the Specialist Degree in Typography of Senac.',
         'credits_license': 'Fonts and source files are available for personal, academic and non-profit use. Commercial use of Grotesca Reforma is not allowed.',
@@ -200,6 +201,7 @@ const resources = {
       'footer': {
         'download_title': 'Baixar a fonte',
         'github_link': 'Projeto da Grotesca Reforma Variável no GitHub',
+        'behance_link': 'Conheça outros projetos do autor',
         'credits_title': 'Créditos',
         'credits_text': 'Este projeto foi desenvolvido por Cadu Carvalho como projeto final da Pós-Graduação em Tipografia do Centro Universitário Senac.',
         'credits_license': 'As fontes e seus arquivos de origem estão disponíveis para uso pessoal, acadêmico ou não-lucrativo. O uso comercial da Grotesca Reforma não é permitido.',
@@ -304,6 +306,7 @@ const resources = {
       'footer': {
         'download_title': 'Télécharger la police',
         'github_link': 'Grotesca Reforma Variável projet sur GitHub',
+        'behance_link': 'Rencontrez d\'autres projets de l\'auteur.',
         'credits_title': 'Crédits',
         'credits_text': 'Ce projet a été développé par Cadu Carvalho comme le project de fin de cours de spécialisation de troisième cycle en typographie du Centre Universitaire Senac.',
         'credits_license': 'Les polices de caractères et leurs fichiers sources sont disponibles pour un usage personnel, académique ou à but non lucratif. L\'utilisation commerciale de Grotesca Reforma n\'est pas autorisée.',
