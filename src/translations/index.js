@@ -98,7 +98,7 @@ const resources = {
         'github_link': 'Grotesca Reforma Variável project on GitHub',
         'credits_title': 'Credits',
         'credits_text': 'This project was developed by Cadu Carvalho as a capstone project for the Specialist Degree in Typography of Senac.',
-        'credits_license': 'Fonts and source files are available according to GNU General Public License 3.0.',
+        'credits_license': 'Fonts and source files are available for personal, academic and non-profit use. Commercial use of Grotesca Reforma is not allowed.',
         'credits_samples': 'Original samples used in this project were obtained from personal collections of Funtimod catalog and digitized movable type catalogs of FAUUSP Graphic Production Laboratory, available on the site'
       }
     }
@@ -202,7 +202,7 @@ const resources = {
         'github_link': 'Projeto da Grotesca Reforma Variável no GitHub',
         'credits_title': 'Créditos',
         'credits_text': 'Este projeto foi desenvolvido por Cadu Carvalho como projeto final da Pós-Graduação em Tipografia do Centro Universitário Senac.',
-        'credits_license': 'As fontes e seus arquivos de origem estão disponíveis de acordo com a licença GNU General Public License 3.0.',
+        'credits_license': 'As fontes e seus arquivos de origem estão disponíveis para uso pessoal, acadêmico ou não-lucrativo. O uso comercial da Grotesca Reforma não é permitido.',
         'credits_samples': 'As amostras originais deste projeto foram obtidas em acervos pessoais de catálogos da Funtimod e nos catálogos digitalizados de tipos móveis do Laboratório de Produção Gráfica da FAUUSP, disponíveis no site'
       }
     }
@@ -306,7 +306,7 @@ const resources = {
         'github_link': 'Grotesca Reforma Variável projet sur GitHub',
         'credits_title': 'Crédits',
         'credits_text': 'Ce projet a été développé par Cadu Carvalho comme le project de fin de cours de spécialisation de troisième cycle en typographie du Centre Universitaire Senac.',
-        'credits_license': 'Les polices de caractères et leurs fichiers sources sont disponibles sous la licence GNU General Public License 3.0.',
+        'credits_license': 'Les polices de caractères et leurs fichiers sources sont disponibles pour un usage personnel, académique ou à but non lucratif. L\'utilisation commerciale de Grotesca Reforma n\'est pas autorisée.',
         'credits_samples': 'Les échantillons originaux de ce projet ont été obtenus à partir de collections personnelles de catalogues Funtimod et de catalogues numérisés de types mobiles du Laboratoire de Production Graphique de FAUUSP, disponibles sur le site'
       }
     }
